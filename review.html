@@ -18,14 +18,20 @@
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
 		</script>
 
-
 	<!-- Other libraries go here -->
+	<!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+	<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+		rel="stylesheet">
+
+	<!-- Google Icons (Material Design)-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- Link to styles of your own -->
 	<link rel="stylesheet" href="./styles/style.css">
-
 </head>
 
 <body>
@@ -36,8 +42,8 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
-				<img src="./images/image.jpg" height="36">
-				ElmoHikes</a>
+				<img src="./images/image.png" height="36">
+				Ryan Game Reviews</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -50,23 +56,66 @@
 				</ul>
 				<form class="d-flex">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
+					<button class="btn btn-primary" type="submit">Search</button>
 				</form>
 			</div>
 		</div>
 	</nav>
 
-	<div class="px-4 py-5 my-5 text-center">
-		<img class="d-block mx-auto mb-4" src="./images/image.jpg" alt="" width="72" height="57">
-		<h1 class="display-5 fw-bold">Welcome to ElmoHikes</h1>
-		<div class="col-lg-6 mx-auto">
-			<p class="lead mb-4">Join a community of hikers looking for new places to explore.</p>
-			<h2>The view is better, together.</h2>
-			<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-				<button type="button" class="btn btn-info btn-lg px-4 gap-3">Login/Signup</button>
+	<form class="container">
+		<div class="card-body form-group">
+			<label for="game-name">Name of the video game:</label>
+			<input type="text" id="game-nme" class="form-control">
+		</div>
+
+		<div class="card-body form-group mb-3 mt-3">
+			<label for="comment">Comments:</label>
+			<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+		</div>
+
+		<div class="card-body form-group">
+			<div id="group">
+				<label style="width: 100px;">Good?</label>
+				<input type="radio" value="val1" name="mud">
+				<label style="width: 50px;">Yes</label>
+				<input type="radio" value="val2" name="mud">
+				<label style="width: 50px;">No</label>
 			</div>
 		</div>
-	</div>
+
+		<div class="card-body form-group dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu" data-bs-toggle="dropdown"
+				aria-expanded="false">
+				Game Difficulty
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				<li><button class="dropdown-item" type="button" id="leveleasy">Easy</button></li>
+				<li><button class="dropdown-item" type="button" id="levelmoderate">Moderate</button></li>
+				<li><button class="dropdown-item" type="button" id="levelhard">Hard</button></li>
+			</ul>
+		</div>
+
+		<div class="card-body">
+			<p>Rate your overall experience:</p>
+			<span class="material-icons" id="star1">star</span>
+			<span class="material-icons" id="star2">star</span>
+			<span class="material-icons" id="star3">star</span>
+			<span class="material-icons" id="star4">star_outline</span>
+			<span class="material-icons" id="star5">star_outline</span>
+		</div>
+
+		<div class="card-body d-grid gap-2">
+			<button id="submit" class="btn btn-primary" type="button">Submit</button>
+		</div>
+	</form>
+
+	<footer class="navbar justify-content-evenly bg-info fixed-bottom">
+		<div class="container py-3">
+			<span class="material-icons">favorite</span>
+			<span class="material-icons">home</span>
+			<span class="material-icons">map</span>
+		</div>
+	</footer>
 
 	<!-- copyright footer -->
 	<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

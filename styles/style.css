@@ -1,1 +1,66 @@
+/* New Color Palette:
+* Lightest (Text):         #F3FCFA 			(text, contrast with dark)
+* Orange (Primary):     	 #FC5C04
+* Gray (Secondary):  			 #888079			(canvas background)
+* Accent:      						 #D4C8A9
+*/
 
+.bg-info {
+	background-color: #888079 !important;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+	color: #FC5C04;
+}
+
+.navbar-brand {
+	font-family: 'Chakra Petch';
+	font-size: 2.25rem;
+}
+
+.btn-info {
+	color: #F3FCFA;
+	background-color: #888079;
+	border-color: #FC5C04;
+}
+
+.btn-primary {
+	color: #F3FCFA;
+	font-size: 150%;
+	background-color: #FC5C04;
+	border-color: #D4C8A9;
+	border-width: thick;
+}
+
+body {
+	background-color: #F3FCFA;
+}
+
+.btn-secondary {
+	color: #F3FCFA;
+	background-color: #FC5C04;
+	border-color: #888079;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	color: #FC5C04;
+	background-color: #888079;
+	border-color: #FC5C04;
+}
+
+.dropdown-menu {
+	background-color: #F3FCFA;
+	border-color: #888079;
+}
+
+.dropdown-item {
+	color: #FC5C04;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+	color: #F3FCFA;
+	background-color: #888079;
+}
